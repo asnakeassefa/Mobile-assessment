@@ -70,7 +70,7 @@ class ProductItem extends StatelessWidget {
             Container(
               alignment: Alignment.centerLeft,
               child: Text(
-                product.title != null? product.title!.substring(0, min(product.title!.length, 50)) : "No title",
+                product.title != null? product.title!.substring(0, min(product.title!.length, 40)) : "No title",
                 style: const TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
@@ -79,7 +79,7 @@ class ProductItem extends StatelessWidget {
             ),
             Spacer(),
             ElevatedButton(
-              
+
               style: ElevatedButton.styleFrom(
                         minimumSize: Size(180, 50),
                         shape: RoundedRectangleBorder(

@@ -66,7 +66,6 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             body: SingleChildScrollView(
               child: SizedBox(
-                height: MediaQuery.of(context).size.height + 300,
                 child: RefreshIndicator(
                   onRefresh: () async {
                     await _fetchProducts();
